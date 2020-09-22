@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/*         Загружаемые модули         */
+/*         Основные размеры        */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+  overflow-x: hidden; }
+  body::-webkit-scrollbar {
+    width: 0.55rem; }
+  body::-webkit-scrollbar-track {
+    background-color: #f5f5f5; }
+  body::-webkit-scrollbar-thumb {
+    background-color: #497dbd;
+    border-radius: 0.25rem; }
+
+main {
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+/* "Circe" font-family */
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Circe"), url("../fonts/circe/circe_300.eot") format("embedded-opentype"), url("../fonts/circe/circe_300.woff2") format("woff2"), url("../fonts/circe/circe_300.woff") format("woff"), url("../fonts/circe/circe_300.svg") format("svg"); }
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Circe"), url("../fonts/circe/circe_600.eot") format("embedded-opentype"), url("../fonts/circe/circe_600.woff2") format("woff2"), url("../fonts/circe/circe_600.woff") format("woff"), url("../fonts/circe/circe_600.svg") format("svg"); }
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Circe"), url("../fonts/circe/circe_700.eot") format("embedded-opentype"), url("../fonts/circe/circe_700.woff2") format("woff2"), url("../fonts/circe/circe_700.woff") format("woff"), url("../fonts/circe/circe_700.svg") format("svg"); }
+
+/* ----------------- Разметкdа под desktop ----------------- */
+.container {
+  min-width: 320px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 125px; }
+
+/* ----------------- Разметкdа под big-tablet ----------------- */
+@media (max-width: 1279px) {
+  .container {
+    padding: 0 60px; } }
+
+/* ----------------- Разметкdа под tablet ----------------- */
+@media (max-width: 999px) {
+  .container {
+    padding: 0 30px; } }
+
+/* ----------------- Разметкdа под mobile ----------------- */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+    padding-bottom: 5rem; } }
+
+.widget-section {
+  position: relative;
+  top: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  min-height: 80px;
+  margin: 0 auto;
+  background-color: #64b5f6;
+  transform: translateY(-50%); }
+
+.widget-section__input {
+  width: 120px;
+  height: 40px;
+  margin: 0 5px;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #64b5f6;
+  background-color: transparent;
+  outline: none; }
+  .widget-section__input::placeholder {
+    color: #ffffff;
+    opacity: 0.8; }
+  .widget-section__input::-webkit-outer-spin-button, .widget-section__input::-webkit-inner-spin-button {
+    -webkit-appearance: none; }
+  .widget-section__input:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .widget-section__input:hover, .widget-section__input:focus {
+    background-color: #1976d2; }
+
+.widget-section__controll {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #64b5f6;
+  background-color: #ffffff;
+  outline: none; }
+  .widget-section__controll:hover, .widget-section__controll:focus {
+    border: 1px solid #ff6f00; }
+  .widget-section__controll:active {
+    color: #0d47a1;
+    opacity: 0.9; }
